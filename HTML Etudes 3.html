@@ -1,0 +1,46 @@
+
+<!doctype html>
+
+<html name="html">
+
+<head name="head">
+  <title> HTML Code Etudes 3</title>
+</head>
+<body name="body">
+  <h1 name="h1"></h1>
+    <h2 name="h2"></h2>
+      <div id="divtag" name="div">
+        <p id="field">
+          <button id="myBtn" name="button">Click Here</button>
+        </p>
+      </div>
+
+<script language="javascript">
+
+    document.getElementById("myBtn").addEventListener("click", function parentNode() {
+
+      parent = document.getElementById("myBtn").parentNode.nodeName;
+      grandparent = document.getElementById("myBtn").parentNode.parentNode.nodeName;
+      greatgrandparent = document.getElementById("myBtn").parentNode.parentNode.parentNode.nodeName;
+      greatgreatgrandparent = document.getElementById("myBtn").parentNode.parentNode.parentNode.parentNode.nodeName;
+      document.getElementById("field").innerHTML = parent + " -> " + grandparent + " -> " + greatgrandparent + " -> " + greatgreatgrandparent
+
+    // while (parent && !parent.previousElementSibling && !parent.nextElementSibling) {
+    //     parent = parent.parentNode.nodeName;
+    // }
+
+
+    // function getParentNode() {
+    // let i = document.getElementById("myBtn").parentNode.nodeName;
+    // for(i; i = "html"; i++) {
+    // i.parentNode
+    // document.getElementById("field").innerHTML = i;
+    // }
+
+
+})
+
+</script>
+
+</body>
+</html>
