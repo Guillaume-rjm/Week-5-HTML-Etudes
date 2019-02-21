@@ -1,0 +1,35 @@
+
+<!doctype html>
+
+<html>
+
+<head>
+  <title> HTML Code Etudes 2</title>
+</head>
+<body>
+  <h1></h1>
+    <h2></h2>
+      <div id="divtag">
+          <img id="pic1" class="pic" src = "https://res-3.cloudinary.com/enchanting/images/w_1600,h_700,c_fill/et-web/2015/05/Munnar/destination-munnar-south-india.jpg" width="500" height="333"/>
+          <br>
+          <img id="pic2" class="pic" src = "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE5NTU2MzE2MzY4ODk3NTQ3/ravi-shankar-9480456-1-402.jpg" />
+
+          <img id="pic3" class="pic" src = "http://www.vancouversun.com/entertainment/cms/binary/10900655.jpg?size=sw620x65" height="333"/>
+      </div>
+
+<script language="javascript">
+    let mypics = document.getElementsByClassName("pic");
+    // document.getElementsByClassName("pic").addEventListener("click", function remove(){
+    // mypics.parentNode.removeChild(mypics);
+    Array.from(document.getElementsByClassName("pic")).forEach(
+    function remove() {
+    // mypics.addEventListener("click", function remove(pics) {
+    myNewPage = document.getElementsByClassName("pic");
+    myNewPage.parentNode.removeChild(mypics);
+  });
+;
+
+</script>
+
+</body>
+</html>

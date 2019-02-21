@@ -1,0 +1,39 @@
+
+<!doctype html>
+
+<html>
+<body>
+  <br>
+
+<form id ="inputform">
+
+Name: <input type="text" name="Name" id="myName" value="">
+Birthday : <input type="date" id="myBD" value="">
+</form>
+
+<p>Click the button to have your age calculated</p>
+
+<button id="myBtn">Click Here</button>
+
+<p id="age"></p>
+
+<script language="javascript">
+
+  document.getElementById("myBtn").addEventListener("click", function(){
+  let x = document.getElementById("myBD").valueAsDate.getFullYear();
+  let m = document.getElementById("myBD").valueAsDate.getMonth() + 1;
+  let y = new Date();
+  let n = y.getMonth() + 1;
+    if(m >= n){
+    z = y.getFullYear() - x - 1;
+    } else {
+    z = y.getFullYear() - x;
+  }
+  document.getElementById("age").innerHTML = z;
+});
+
+
+</script>
+
+</body>
+</html>
